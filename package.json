@@ -1,0 +1,39 @@
+{
+  "name": "express-webpack-full-live-reload-example",
+  "version": "1.0.0",
+  "description": "A starting template with full live reload for webpack&express application with cjs templates",
+  "author": "Brilliafy",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev supervisor -w server,app.js -e node,js,html app",
+    "browsersync": "cross-env NODE_ENV=dev node app_browsersync",
+    "build": "webpack",
+    "production": "webpack --config webpack.production.config.js -p & cross-env NODE_ENV=production node app"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "consolidate": "^1.0.4",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "chokidar": "^3.6.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "node-sass": "^9.0.0",
+    "reload": "^3.2.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^16.0.0",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-middleware": "^7.3.0",
+    "webpack-hot-middleware": "^2.26.1"
+  }
+}
