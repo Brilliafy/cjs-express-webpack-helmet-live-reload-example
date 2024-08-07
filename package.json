@@ -4,6 +4,10 @@
   "description": "A starting template with full live reload for webpack&express application with cjs templates",
   "author": "Brilliafy",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brilliafy/cjs-express-webpack-helmet-live-reload-example.git"
+},
   "scripts": {
     "start": "cross-env NODE_ENV=dev supervisor -w server,app.js -e node,js,html app",
     "browsersync": "cross-env NODE_ENV=dev node app_browsersync",
